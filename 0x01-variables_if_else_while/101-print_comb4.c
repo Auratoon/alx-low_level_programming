@@ -1,19 +1,18 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of three digits
+ * main - Entry point
  *
  * Return: Always 0
  */
-
 int main(void)
 {
 	int i, j, k;
 
-	for (i = 48; i <= 55; i++)
+	for (i = 48; i < 56; i++)
 	{
-		for (j = i + 1; j <= 56; j++)
+		for (j = i + 1; j < 57; j++)
 		{
-			for (k = j + 1; k <= 57; k++)
+			for (k = j + 1; k < 58; k++)
 			{
 				putchar(i);
 				putchar(j);
