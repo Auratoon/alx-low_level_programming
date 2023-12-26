@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /**
  * main - Entry point
  *
@@ -8,10 +9,11 @@ int main(void)
 {
 	long int i, j, prim;
 	int count = 0;
+	long int n = 612852475143;
 
-	for (i = 2; i < 612852475143; i++)
+	for (i = 2; i <= sqrt(n); i++)
 	{
-		if (612852475143 % i == 0)
+		if (n % i == 0)
 		{
 			for (j = 2; j < i; j++)
 			{
