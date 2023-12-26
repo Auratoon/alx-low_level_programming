@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 /**
  * main - Entry point
  *
@@ -7,24 +6,19 @@
  */
 int main(void)
 {
-	long int i, j, prim;
-	int count = 0;
+	long int i, prim;
 	long int n = 612852475143;
 
-	for (i = 2; i <= sqrt(n); i++)
+	while (n % 2 == 0)
+		n /= 2;
+	for (i = 3; i * i <= n; i += 2)
 	{
-		if (n % i == 0)
-		{
-			for (j = 2; j < i; j++)
-			{
-				if (i % j == 0)
-					count += 1;
-			}
-			if (count == 0)
-				prim = i;
-		}
-		count = 0;
+		while (n % i == 0)
+			n /= i;
 	}
+	if (n > 2)
+		prim = n;
+	prim = i;
 	printf("%ld\n", prim);
 	return (0);
 }
