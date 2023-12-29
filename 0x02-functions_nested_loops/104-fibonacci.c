@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long int a = 0,b = 1, c;
+	unsigned long int a = 0, b = 1, c;
 	int count = 0;
 
 	while (count < 99)
