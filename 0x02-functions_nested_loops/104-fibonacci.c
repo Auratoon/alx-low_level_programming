@@ -11,7 +11,7 @@ int main(void)
 
 	while (count < 99)
 	{
-		printf("%ld", a + b);
+		printf("%lu", a + b);
 		if (count < 98)
 			printf(", ");
 		c = b;
