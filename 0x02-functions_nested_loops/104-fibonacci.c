@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int a = 0, b = 1, c;
 	int count = 0;
 
-	while (count < 99)
+	while (count < 98)
 	{
 		printf("%lu", a + b);
 		if (count < 98)
