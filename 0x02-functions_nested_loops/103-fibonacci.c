@@ -13,8 +13,8 @@ int main(void)
 	b = 1;
 	while (a + b < 4000000)
 	{
-		if (a + b % 2 == 0)
-			sum += (a + b);
+		if ((a + b) % 2 == 0)
+			sum = sum + (a + b);
 		c = b;
 		b = a + b;
 		a = c;
