@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	unsigned long int a = 0, b = 1, c;
+	unsigned long long int a = 0, b = 1, c;
 	int count = 0;
 
 	while (count < 98)
 	{
-		printf("%lu", a + b);
+		printf("%llu", a + b);
 		if (count < 97)
 			printf(", ");
 		c = b;
