@@ -12,7 +12,7 @@ int main(void)
 	while (count < 98)
 	{
 		printf("%lu", a + b);
-		if (count < 98)
+		if (count < 97)
 			printf(", ");
 		c = b;
 		b = a + b;
