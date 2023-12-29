@@ -14,7 +14,9 @@ int main(void)
 	b = 1;
 	while (count < 50)
 	{
-		printf("%ld, ", a + b);
+		printf("%ld", a + b);
+		if (count < 49)
+			printf(", ");
 		c = b;
 		b = a + b;
 		a = c;
