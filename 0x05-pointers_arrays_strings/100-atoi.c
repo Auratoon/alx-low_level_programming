@@ -14,9 +14,9 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			if (i - 1 >= 0 && s[i - 1] == '-')
-				return (-s[i]);
+				return (-(0 + s[i]));
 			else
-				return (s[i]);
+				return (0 + s[i]);
 			break;
 		}
 	}
