@@ -14,6 +14,6 @@ int _strcmp(char *s1, char *s2)
 		diff = s1[i] - s2[j];
 		i++;
 		j++;
-	} while (s1[i] == s2[j] && s1[i] != '\0');
+	} while (s1[i] == s2[j] && s1[i] != '\0' && s2[j] != '\0');
 	return (diff);
 }
