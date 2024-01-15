@@ -7,19 +7,18 @@
  */
 int _atoi(char *s)
 {
-	int i;
+	int i, res = 0, sign = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		if (s[0] >= '0' && s[0] <= '9')
+			sign = 1;
+		if (s[i] == '-' && s[i + 1] >= '0' && s[i + 1] <= '9')
+			sign = -1;
 		if (s[i] >= '0' && s[i] <= '9')
-		{
-			if (i - 1 >= 0 && s[i - 1] == '-')
-				return (-(0 + s[i]));
-			else
-				return (0 + s[i]);
-			break;
-		}
+			res = res * 10 + (s[i] - '0');
+		if (s[i] >= '0' && s[i] <= '9' && (s[i + 1] < '0' || s[i + 1] > '9'))
+				break;
 	}
-	if (s[i] == '\0')
-		return (0);
+	return (sign * res);
 }
